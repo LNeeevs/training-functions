@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS | Training Functions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/doing.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid cont-first">
+            <div class="col-12">
+                <h1>TRAINING FUNCTIONS - EXERCICES 1</h1>
+            </div>
+        </div>
+    </section>
+
+    <!--EXERCICIO 1-->
+    <section>
+        <div class="container-fluid cont-second">
+            <div class="row">
+                <div class="col">
+                    <p>Calcule a média de diversas notas digitadas pelo usuário:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" id="nota1" class="form-control" placeholder="Insira a 1ª nota">
+                </div>
+                <div class="col">
+                    <input type="text" id="nota2" class="form-control" placeholder="Insira a 2ª nota">
+                </div>
+                <div class="col">
+                    <input type="text" id="nota3" class="form-control" placeholder="Insira a 3ª nota">
+                </div>
+                <div class="col">
+                    <input type="text" id="nota4" class="form-control" placeholder="Insira a 4ª nota">
+                </div>
+            </div>
+            <div class="row pad-top">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="coletaNotas()" style="width:100%">Calcular a média</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid cont-foot"></div>
+    </section>
+
+    <section>
+        <div class="container-fluid cont-first">
+            <div class="col-12">
+                <h1>TRAINING FUNCTIONS - EXERCICES 2</h1>
+            </div>
+        </div>
+    </section>
+
+    <!--EXERCICIO 2-->
+    <section>
+        <div class="container-fluid cont-second">
+            <div class="row">
+                <div class="col">
+                    <p>Faça um programa que entre com cinco números e imprima o quadrado de cada número:</p>
+                </div>
+            </div>
+            <div class="row" id="row-numeros">
+                <div class="col">
+                    <input type="text" id="numero1" class="form-control" placeholder="Insira a 1ª número">
+                </div>
+                <div class="col">
+                    <input type="text" id="numero2" class="form-control" placeholder="Insira a 2ª número">
+                </div>
+                <div class="col">
+                    <input type="text" id="numero3" class="form-control" placeholder="Insira a 3ª número">
+                </div>
+                <div class="col">
+                    <input type="text" id="numero4" class="form-control" placeholder="Insira a 4ª número">
+                </div>
+                <div class="col">
+                    <input type="text" id="numero5" class="form-control" placeholder="Insira a 5ª número">
+                </div>
+            </div>
+            <div class="row pad-top">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="coletaNumeros()" style="width:100%">Gerar raiz quadrada</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid cont-foot"></div>
+    </section>
+
+    <section>
+        <div class="container-fluid cont-first">
+            <div class="col-12">
+                <h1>TRAINING FUNCTIONS - EXERCICES 3</h1>
+            </div>
+        </div>
+    </section>
+
+    <!--EXERCICIO 3-->
+    <section>
+        <div class="container-fluid cont-second">
+            <div class="row">
+                <div class="col">
+                    <p>Peça ao usuário para digitar 5 números em uma caixa de texto. Verifique qual é o maior número e exiba-o:</p>
+                </div>
+            </div>
+            <div class="row" id="row-numeros">
+                <div class="col">
+                    <input type="text" id="numeros-inseridos" class="form-control" placeholder="Insira 5 números inteiros separados por espaço...">
+                </div>
+            </div>
+            <div class="row pad-top">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="coletaNumeroInserido()" style="width:100%">Exibir maior valor</button>
+                    <p id="teste"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid cont-foot"></div>
+    </section>
+
+    <section>
+        <div class="container-fluid cont-first">
+            <div class="col-12">
+                <h1>TRAINING FUNCTIONS - EXERCICES 4</h1>
+            </div>
+        </div>
+    </section>
+
+    <!--EXERCICIO 3-->
+    <section>
+        <div class="container-fluid cont-second">
+            <div class="row">
+                <div class="col">
+                    <p>Peça ao usuário para digitar várias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores</p>
+                </div>
+            </div>
+            <div class="row" id="row-numeros">
+                <div class="col">
+                    <input type="text" id="idades-inseridas" class="form-control" placeholder="Digite várias idades separadas por espaço...">
+                </div>
+            </div>
+            <div class="row pad-top">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="coletaIdade()" style="width:100%">Exibir maior e menor idade</button>
+                    <p id="teste"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid cont-foot"></div>
+    </section>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/doing.js"></script>
+
+</html>

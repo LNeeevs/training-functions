@@ -1,0 +1,31 @@
+body{
+    background-color: snow;
+}
+h1{
+    text-align: center;
+}
+.cont-first{
+    background-color: darkgray;
+    color: black;
+    padding: 20px 50px;
+}
+.cont-second{
+    padding: 50px 20px;
+    background-color: gainsboro;
+    color: black;
+}
+.pad-top{
+    padding-top: 20px;
+}
+.btn{
+    width: 100%;
+}
+.cont-third{
+    padding: 30px 20px;
+    background-color: gainsboro;
+    color: black;
+}
+.cont-foot{
+    padding: 10px 0px;
+    background-color: black;
+}
