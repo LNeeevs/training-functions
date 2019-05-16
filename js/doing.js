@@ -95,3 +95,55 @@ function coletaIdade(){
     alert(vColetaIdades);
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+var conteudoGerado = [], alturas = [], sexos = [], alturasNumericas = [];
+var maiorAltura = 0, contSexosM = 0, contSexosF = 0;
+
+
+function coletaAlturaSexo(){
+    //coleta todos os inputs de dentro da section #s5-2
+    var alturaInput = document.querySelectorAll('section#s5-2 input');
+    
+    //salva todos os resultados em conteudoGerado
+    for(var x=0; x<alturaInput.length; x++){
+        conteudoGerado[x] = alturaInput[x].value;
+    }
+    
+    //salva todas as alturas em um array e todos os sexos em outro array
+    alturas = conteudoGerado[0]+conteudoGerado[2]+conteudoGerado[4]+conteudoGerado[6]+conteudoGerado[8];
+    sexos = conteudoGerado[1]+conteudoGerado[3]+conteudoGerado[5]+conteudoGerado[7]+conteudoGerado[9];
+
+    //mostra todas as alturas e todos os sexos salvos  
+    alert('Alturas: ' + alturas + "\n" + 'Sexos: ' + sexos);
+
+    //transforma as alturas em inteiro
+    for(var x=0; x<alturas.length; x++){
+        alert('Exibindo alturas: ' + alturas[x]);
+        alturasNumericas[x] = parseFloat(alturas[x]);
+    }
+
+    //verifica qual é a maior altura entre todas as outras
+    maiorAltura = Math.max.apply(null, alturasNumericas);
+
+    //mostra a maior altura em todas  
+    alert('Maior altura: ' + maiorAltura);
+
+    //mostra a quantidade de casas no vetor array
+    alert(sexos.length);
+
+    //separa os sexos masculinos de femininos
+    for(var x=0; x<sexos.length; x++){
+        if(sexos[x] == 'M' || sexos[x] == 'm'){
+            contSexosM++;
+        }
+        else if(sexos[x] == 'F' || sexos[x] == 'f'){
+            contSexosF++;
+        }
+    }
+
+    //mostra o resultado das contagens
+    alert('Contagem de masculinos: ' + contSexosM + '\n' + 'Contagem de femininos: ' + contSexosF);
+
+    //alerta se M é maior ou não que F
+    var resultadoContagem = (contSexosM > contSexosF) ? alert("M é maior que F") : alert("F é maior que M");
+}

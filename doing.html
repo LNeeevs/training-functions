@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <section>
+    <!--EXERCICIO 1-->
+    <section id="s1">
         <div class="container-fluid cont-first">
             <div class="col-12">
                 <h1>TRAINING FUNCTIONS - EXERCICES 1</h1>
@@ -18,8 +19,7 @@
         </div>
     </section>
 
-    <!--EXERCICIO 1-->
-    <section>
+    <section id="s1-2">
         <div class="container-fluid cont-second">
             <div class="row">
                 <div class="col">
@@ -48,20 +48,20 @@
         </div>
     </section>
 
-    <section>
+    <section id="s1-3">
         <div class="container-fluid cont-foot"></div>
     </section>
 
-    <section>
+    <!--EXERCICIO 2-->
+    <section id="s2">
         <div class="container-fluid cont-first">
             <div class="col-12">
                 <h1>TRAINING FUNCTIONS - EXERCICES 2</h1>
             </div>
         </div>
     </section>
-
-    <!--EXERCICIO 2-->
-    <section>
+    
+    <section id="s2-2">
         <div class="container-fluid cont-second">
             <div class="row">
                 <div class="col">
@@ -93,11 +93,12 @@
         </div>
     </section>
 
-    <section>
+    <section id="s2-3">
         <div class="container-fluid cont-foot"></div>
     </section>
 
-    <section>
+    <!--EXERCICIO 3-->
+    <section id="s3">
         <div class="container-fluid cont-first">
             <div class="col-12">
                 <h1>TRAINING FUNCTIONS - EXERCICES 3</h1>
@@ -105,8 +106,7 @@
         </div>
     </section>
 
-    <!--EXERCICIO 3-->
-    <section>
+    <section id="s3-2">
         <div class="container-fluid cont-second">
             <div class="row">
                 <div class="col">
@@ -127,11 +127,12 @@
         </div>
     </section>
 
-    <section>
+    <section id="s3-3">
         <div class="container-fluid cont-foot"></div>
     </section>
 
-    <section>
+    <!--EXERCICIO 4-->
+    <section id="s4">
         <div class="container-fluid cont-first">
             <div class="col-12">
                 <h1>TRAINING FUNCTIONS - EXERCICES 4</h1>
@@ -139,8 +140,7 @@
         </div>
     </section>
 
-    <!--EXERCICIO 3-->
-    <section>
+    <section id="s4-2">
         <div class="container-fluid cont-second">
             <div class="row">
                 <div class="col">
@@ -161,9 +161,184 @@
         </div>
     </section>
 
-    <section>
+    <section id="s4-3">
         <div class="container-fluid cont-foot"></div>
     </section>
+
+    <!--EXERCICIO 5-->
+    <section id="s5">
+        <div class="container-fluid cont-first">
+            <div class="col-12">
+                <h1>TRAINING FUNCTIONS - EXERCICES 5</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="s5-2">
+        <div class="container-fluid cont-second">
+            <div class="row">
+                <div class="col">
+                    <p>Crie um programa que entre com os dados de altura e sexo de 5 pessoas. Imprima na tela quantas pessoas são do sexo masculino e quantas pessoas são do sexo feminino. Mostre também qual é a maior altura e se essa altura é de um homem ou uma mulher:</p>
+                </div>
+            </div>
+            <div class="row little-pad-top" id="asRow1">
+                <div class="col">
+                    <input type="text" id="altura1" class="form-control" placeholder="Digite altura...">
+                </div>
+                <div class="col">
+                    <input type="text" id="sexo1" class="form-control" placeholder="Digite sexo [M ou F]">
+                </div>
+            </div>
+            <div class="row little-pad-top">
+                <div class="col">
+                    <input type="text" id="altura2" class="form-control" placeholder="Digite altura...">
+                </div>
+                <div class="col">
+                    <input type="text" id="sexo2" class="form-control" placeholder="Digite sexo [M ou F]">
+                </div>
+            </div>
+            <div class="row little-pad-top">
+                <div class="col">
+                    <input type="text" id="altura3" class="form-control" placeholder="Digite altura...">
+                </div>
+                <div class="col">
+                    <input type="text" id="sexo3" class="form-control" placeholder="Digite sexo [M ou F]">
+                </div>
+            </div>
+            <div class="row little-pad-top">
+                <div class="col">
+                    <input type="text" id="altura4" class="form-control" placeholder="Digite altura...">
+                </div>
+                <div class="col">
+                    <input type="text" id="sexo4" class="form-control" placeholder="Digite sexo [M ou F]">
+                </div>
+            </div>
+            <div class="row little-pad-top">
+                <div class="col">
+                    <input type="text" id="altura5" class="form-control" placeholder="Digite altura...">
+                </div>
+                <div class="col">
+                    <input type="text" id="sexo5" class="form-control" placeholder="Digite sexo [M ou F]">
+                </div>
+            </div>
+            <div class="row pad-top">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="exibe()" style="width:100%">Exibir maior e menor idade</button>
+                    <p id="respostadeteste"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s5-3">
+        <div class="container-fluid cont-foot"></div>
+    </section>
+
+    <!--EXERCICIO 4--
+    <section id="s4">
+        <div class="container-fluid cont-first">
+            <div class="col-12">
+                <h1>TRAINING FUNCTIONS - EXERCICES 4</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="s4-2">
+        <div class="container-fluid cont-second">
+            <div class="row">
+                <div class="col">
+                    <p>Peça ao usuário para digitar várias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores</p>
+                </div>
+            </div>
+            <div class="row" id="row-numeros">
+                <div class="col">
+                    <input type="text" id="idades-inseridas" class="form-control" placeholder="Digite várias idades separadas por espaço...">
+                </div>
+            </div>
+            <div class="row pad-top">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="coletaIdade()" style="width:100%">Exibir maior e menor idade</button>
+                    <p id="teste"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s4-3">
+        <div class="container-fluid cont-foot"></div>
+    </section>-->
+
+    <!--EXERCICIO 6-->
+    <section id="s6">
+        <div class="container-fluid cont-first">
+            <div class="col-12">
+                <h1>TRAINING FUNCTIONS - EXERCICES 6</h1>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="s6-2">
+        <div class="container-fluid cont-second">
+            <div class="row">
+                <div class="col">
+                    <p>Peça ao usuário para digitar vários nomes. Exiba na tela todos os nomes digitados, porém de maneira invertida (do último para o primeiro):</p>
+                </div>
+            </div>
+            <div class="row little-pad-top">
+                <div class="col">
+                    <textarea id="nomesInseridos" class="form-control" placeholder="Digite vários nomes..." rows="5"></textarea>
+                </div>
+            </div>
+            <div class="row pad-top">
+                <div class="col-12">
+                    <button class="btn btn-primary" onclick="variosNomes()" style="width:100%">Ordenação de nomes</button>
+                    <p id="respostadeteste"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s6-3">
+        <div class="container-fluid cont-foot"></div>
+    </section>
+
+    <!--EXERCICIO 6-->
+    <section id="s7">
+            <div class="container-fluid cont-first">
+                <div class="col-12">
+                    <h1>TRAINING FUNCTIONS - EXERCICES 7</h1>
+                </div>
+            </div>
+        </section>
+    
+        
+        <section id="s7-2">
+            <div class="container-fluid cont-second">
+                <div class="row">
+                    <div class="col">
+                        <p>Peça para o usuário digitar uma data. Exiba separadamente o dia, o mês e o ano. (Obs.: não necessita de laço de repetição):</p>
+                    </div>
+                </div>
+                <div class="row little-pad-top">
+                    <div class="col">
+                        <input type="date" id="data_inserida" class="form-control">
+                    </div>
+                </div>
+                <div class="row pad-top">
+                    <div class="col-12">
+                        <button class="btn btn-primary" onclick="ordenaData()" style="width:100%">Ordenação de nomes</button>
+                        <p id="respostadeteste"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="s7-3">
+            <div class="container-fluid cont-foot-final">
+                <h4>END OF THE EXERCICES - CONGRATULATIONS!</h4>
+            </div>
+        </section>
 
 </body>
 
@@ -171,5 +346,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/doing.js"></script>
+<script type="text/javascript" src="js/exe.js"></script>
 
 </html>
